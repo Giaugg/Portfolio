@@ -1,0 +1,25 @@
+.circuit-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.circuit-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.circuit-line.glow path {
+  filter: drop-shadow(0 0 6px cyan);
+}
+.circuit-dot{
+  display: none;
+}
+.circuit-dot.active {
+  display: block;
+  filter: drop-shadow(0 0 8px #0ff) drop-shadow(0 0 12px #0ff);
+  transition: filter 0.3s ease;
+}

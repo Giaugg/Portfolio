@@ -1,0 +1,141 @@
+/* Home.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #09aff6, #0004e4);
+  color: #fff;
+  opacity: 0.95;
+  overflow-x: hidden;
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: background 0.3s;
+}
+
+.nav-item:hover {
+  background: rgba(0, 255, 255, 0.2);
+}
+
+.nav-item.active {
+  background: rgba(0, 255, 255, 0.5);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.card-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background: rgb(0, 191, 255);
+  border-radius: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.5);
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  animation: unveil 0.5s ease-out forwards;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes unveil {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.gate {
+  width: 300px;
+  height: 300px;
+  transform: scale(2);
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  z-index: 20;
+}
