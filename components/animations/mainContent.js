@@ -18,7 +18,7 @@ const optionsData = {
   blog: [
     {
       text: "Hi, I'm Rich!\n\n About me and about my idea for this portfolio.\n\n\n\n Click to see my Blog.",
-      img: "/images/me.png",
+      img: "/images/blog.png",
       link: "/blog",
       color: "#f9f9f9ff",
     },
