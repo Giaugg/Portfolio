@@ -9,66 +9,77 @@ import Portal from "./portal";
 const optionsData = {
   start: [
     {
-      text: "Hi, I'm Rich! Welcome to my Portfolio.\n Click to see my CV",
+      text: "Hi, I'm Rich!\n\n Future Full-Stack Engineer.\n\n Welcome to my Portfolio.\n\n\n\n Click to see my CV.",
       img: "/images/me.png",
       link: "/cv",
+      color: "#f9f9f9ff",
+    },
+  ],
+  blog: [
+    {
+      text: "Hi, I'm Rich!\n\n About me and about my idea for this portfolio.\n\n\n\n Click to see my Blog.",
+      img: "/images/me.png",
+      link: "/blog",
+      color: "#f9f9f9ff",
     },
   ],
   projects: [
     {
       text: "Project: Ecommerce sales project (PHP).",
-      img: "/images/project1.jpg",
+      img: "/images/TMDT.png",
       link: "/project1",
+      color: "#f9f9f9ff",
     },
     {
       text: "Project: Cafe manager order drinks at table (ReactJS + NestJS).",
-      img: "/images/project2.jpg",
+      img: "/images/CNPM.png",
       link: "/project2",
+      color: "#e16b53ff",
     },
     {
       text: "Project: Portfolio about myself using ReactJS and animation.",
       img: "/images/portfolio.png",
       link: "/project3",
+      color: "#04e96fff",
     },
   ],
   skills: [
     {
-      text: "Skill: Proficient in React & JSX.",
-      img: "/images/skill1.jpg",
-      link: "/skills1",
+      text: "Programming & Technology Skills",
+      img: "/images/skill1.png",
+      link: "/",
+      color: "#ff00ff", // magenta neon
     },
     {
-      text: "Skill: Advanced JavaScript & ES6.",
-      img: "/images/skill2.jpg",
-      link: "/skills2",
+      text: "Systems & Infrastructure Skills",
+      img: "/images/skill2.png",
+      link: "/",
+      color: "#ff7b00", // orange neon
     },
     {
       text: "Skill: Node.js backend development.",
-      img: "/images/skill3.jpg",
-      link: "/skills3",
+      img: "/images/skill3.png",
+      link: "/",
+      color: "#00f0ff", // cyan neon
     },
   ],
+
   contact: [
+    {
+      text: "Contact: GitHub Giaugg",
+      img: "/images/githup2.png",
+      link: "https://github.com/giaugg",
+      target: "_blank",
+      color: "#dd45d0ff",
+    },
     {
       text: "Contact: Facebook Lê Hữu Giàu",
       img: "/images/fb1.jpg",
       link: "https://www.facebook.com/giau15052004",
       target: "_blank",
+      color: "#137ef7ff",
     },
-    {
-      text: "Contact: GitHub Profile",
-      img: "/images/githup2.png",
-      link: "https://github.com/giaugg",
-      target: "_blank",
-    },
-  ],
-  footer: [
-    {
-      text: "Thanks for coming here, Click to get a gift for you.",
-      img: "",
-      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      target: "_blank",
-    },
+
   ],
 };
 
@@ -208,16 +219,26 @@ export default function Home() {
 
           <div className="card-container" ref={cardsRef}>
             {optionsData[currentOption].map((card, i) => (
-              <div
-                key={`card-${currentOption}-${i}`}
-                className="card"
-                onMouseEnter={() =>
-                  card.img &&
-                  setHoveredCard({ index: i, option: currentOption })
-                }
-                onMouseLeave={() => setHoveredCard(null)}
-                onClick={() => handleCardClick(card.link, card.target)}
-              >
+            <div
+              key={`card-${currentOption}-${i}`}
+              className="card"
+              style={{
+                whiteSpace: "pre-line",
+
+                border: `2px solid ${card.color || "#00f0ff"}`,
+                boxShadow: `
+                  0 0 10px ${card.color || "#00f0ff"},
+                  0 0 20px ${card.color || "#00f0ff"},
+                  0 0 40px ${card.color || "#00f0ff"}
+                `,
+              }}
+              onMouseEnter={() =>
+                card.img && setHoveredCard({ index: i, option: currentOption })
+              }
+              onMouseLeave={() => setHoveredCard(null)}
+              onClick={() => handleCardClick(card.link, card.target)}
+              
+            >
                 {hoveredCard?.option === currentOption &&
                   hoveredCard.index === i &&
                   card.img ? (

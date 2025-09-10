@@ -2,11 +2,12 @@
 
 import CircuitBackground from "../components/animations/CircuitBackground";
 import MainContent from "../components/animations/mainContent";
-import Navbar from "../components/Navbar";
 import Portal from "../components/animations/portal";
 
 import "../styles/home.css"
 import "../styles/background.css"
+import "../styles/cv.css"
+import "../styles/blog.css"
 export default function Home() {
   return (
     <div className="app">

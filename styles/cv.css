@@ -1,0 +1,88 @@
+.cv-layout {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* LEFT COLUMN */
+.cv-left {
+  width: 30%;
+  background: #eaf3fb; /* xanh nhạt */
+  padding: 25px;
+  color: #0a2540; /* xanh đậm */
+}
+
+.profile-photo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cv-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  color: #0056b3; /* xanh dương nổi bật */
+}
+
+.cv-title {
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* RIGHT COLUMN */
+.cv-right {
+  width: 70%;
+  padding: 30px;
+  background: #ffffff;
+  color: #333;
+}
+
+/* SECTIONS */
+section h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #0056b3; /* accent xanh */
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* EXTRA STYLE */
+.cv-left section {
+  margin-top: 20px;
+}
+
+.cv-summary {
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: justify;
+}
