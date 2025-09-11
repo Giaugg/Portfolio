@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "../../styles/blog.css"
 
 export default function BlogPage() {
   return (
