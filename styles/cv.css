@@ -108,3 +108,20 @@ a:hover {
   background-color: #29f300;
   color: #fff;
 }
+.download-button {
+  margin: 10px 0;
+}
+
+.download-button a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #00bfff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-button a:hover {
+  background: #009acd;
+}

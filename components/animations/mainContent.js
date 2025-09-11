@@ -57,7 +57,7 @@ const optionsData = {
       color: "#ff7b00", // orange neon
     },
     {
-      text: "Skill: Node.js backend development.",
+      text: "Other Skills",
       img: "/images/skill3.png",
       link: "/",
       color: "#00f0ff", // cyan neon
