@@ -18,7 +18,7 @@ const optionsData = {
   blog: [
     {
       text: "This is my Blog!\n\n About me and about my idea for this portfolio.\n\n\n\n Click to see my Blog.",
-      img: "/images/blog.png",
+      img: "/images/idea.png",
       link: "/blog",
       color: "#f9f9f9ff",
     },
@@ -27,13 +27,15 @@ const optionsData = {
     {
       text: "Project: Ecommerce sales project (PHP).",
       img: "/images/TMDT.png",
-      link: "/project1",
+      link: "https://github.com/BaotheParo/web2",
+      target: "_blank",
       color: "#f9f9f9ff",
     },
     {
       text: "Project: Cafe manager order drinks at table (ReactJS + NestJS).",
       img: "/images/CNPM.png",
-      link: "/project2",
+      link: "https://github.com/Giaugg/FrontEnd",
+      target: "_blank",
       color: "#e16b53ff",
     },
     {

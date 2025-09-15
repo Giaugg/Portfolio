@@ -7,6 +7,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
 .blog-title {
@@ -61,4 +62,22 @@
 .back-button a:hover {
   background-color: #29f300;
   color: #fff;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.comparison-table th {
+  background-color: #f4f4f4;
+  text-align: center;
 }
