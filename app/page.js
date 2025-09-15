@@ -6,8 +6,6 @@ import Portal from "../components/animations/portal";
 
 import "../styles/home.css"
 import "../styles/background.css"
-import "../styles/cv.css"
-import "../styles/blog.css"
 export default function Home() {
   return (
     <div className="app">
