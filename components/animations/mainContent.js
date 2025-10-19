@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { gsap } from "gsap";
 import CircuitBackground from "./CircuitBackground";
 import Portal from "./portal";
+import Image from 'next/image';
 
 const optionsData = {
   start: [
@@ -245,7 +246,7 @@ export default function Home() {
                   hoveredCard.index === i &&
                   card.img ? (
                   <div className="card-image">
-                    <img
+                    <Image
                       src={card.img}
                       alt={card.text}
                       style={{

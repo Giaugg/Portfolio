@@ -146,7 +146,7 @@ export default function BlogPage() {
               </td>
               <td>
                 Free plan restrictions on serverless usage (good for demo, not large scale).<br/>
-                Best suited for Next.js; for plain React it may be "overkill".
+                Best suited for Next.js; for plain React it may be &quot;overkill&quot;.
               </td>
             </tr>
           </tbody>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 import "../../styles/cv.css";
 
 export default function CvPage() {
@@ -12,7 +13,7 @@ export default function CvPage() {
       {/* Embedded CV Viewer */}
       <div className="cv-preview">
         <a href="/Rich_CV.pdf" target="_blank" rel="noopener noreferrer">
-          <img src="/images/cv-preview.jpg" alt="CV Preview" className="cv-img" 
+          <Image src="/images/cv-preview.jpg" alt="CV Preview" className="cv-img" 
             style={{ width: "100%", height: "100%" }}
           
           />
